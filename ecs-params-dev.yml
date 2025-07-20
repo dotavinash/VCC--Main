@@ -1,7 +1,7 @@
 version: 1
 task_definition:
-  task_role_arn: arn:aws:iam::592549787542:role/AWS_AZ_AZAP_SERVICE_ROLE
-  task_execution_role: arn:aws:iam::592549787542:role/AWS_AZ_AZAP_SERVICE_ROLE
+  task_role_arn: arn:aws:iam::1:role/1
+  task_execution_role: arn:aws:iam::1:role/1
   ecs_network_mode: awsvpc
   task_size:
     mem_limit: 30GB
@@ -10,9 +10,9 @@ run_params:
   network_configuration:
     awsvpc_configuration:
       subnets:
-        - "subnet-063e9c22078a48f7d"
-        - "subnet-0ad7c23627956c917"
+        - "subnet-1"
+        - "subnet-1"
       security_groups:
-        - "sg-046698a06e7f01e10"
+        - "sg-1"
         
       assign_public_ip: DISABLED
